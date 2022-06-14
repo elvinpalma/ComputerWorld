@@ -23,7 +23,8 @@ namespace ComputerWorld.BL
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             
         }
-        //Tabla de Base de Datos
+        //Tablas de Base de Datos
         public DbSet<Producto> Productos { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
     }
 }
