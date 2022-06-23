@@ -131,7 +131,7 @@ namespace ComputerWorld.WebAdmin.Controllers
             string path = Server.MapPath("~/Imagenes/" + imagen.FileName);
             imagen.SaveAs(path);
 
-            return "/Imagenes" + imagen.FileName;
+            return "/Imagenes/" + imagen.FileName;
         }
     }
 }
