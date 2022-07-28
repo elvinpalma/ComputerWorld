@@ -17,6 +17,30 @@ namespace ComputerWorld.BL
                         
             contexto.Usuarios.Add(nuevoUsuario);
 
+            var nuevoUsuario1 = new Usuario();
+            nuevoUsuario1.Nombre = "Emilsson";
+            nuevoUsuario1.Contrasena = Encriptar.CodificarContrasena("456");
+
+            contexto.Usuarios.Add(nuevoUsuario1);
+
+            var nuevoUsuario2 = new Usuario();
+            nuevoUsuario2.Nombre = "Erick";
+            nuevoUsuario2.Contrasena = Encriptar.CodificarContrasena("789");
+
+            contexto.Usuarios.Add(nuevoUsuario2);
+
+            var nuevoUsuario3 = new Usuario();
+            nuevoUsuario3.Nombre = "Wilbert";
+            nuevoUsuario3.Contrasena = Encriptar.CodificarContrasena("321");
+
+            contexto.Usuarios.Add(nuevoUsuario3);
+
+            var nuevoUsuario4 = new Usuario();
+            nuevoUsuario4.Nombre = "Elvin";
+            nuevoUsuario4.Contrasena = Encriptar.CodificarContrasena("654");
+
+            contexto.Usuarios.Add(nuevoUsuario4);
+
             base.Seed(contexto);
         }
     }
